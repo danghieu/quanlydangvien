@@ -39,6 +39,9 @@
             this.textBoxmatkhau = new System.Windows.Forms.TextBox();
             this.buttondangnhap = new System.Windows.Forms.Button();
             this.linkLabelquenmatkhau = new System.Windows.Forms.LinkLabel();
+            this.labelthongbao = new System.Windows.Forms.Label();
+            this.labelthongbaotaikhoan = new System.Windows.Forms.Label();
+            this.labelthongbaomatkhau = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,7 +81,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Blue;
-            this.label3.Location = new System.Drawing.Point(201, 188);
+            this.label3.Location = new System.Drawing.Point(208, 178);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(438, 17);
             this.label3.TabIndex = 3;
@@ -114,6 +117,7 @@
             // 
             this.textBoxmatkhau.Location = new System.Drawing.Point(358, 281);
             this.textBoxmatkhau.Name = "textBoxmatkhau";
+            this.textBoxmatkhau.PasswordChar = '*';
             this.textBoxmatkhau.Size = new System.Drawing.Size(141, 20);
             this.textBoxmatkhau.TabIndex = 8;
             // 
@@ -138,12 +142,49 @@
             this.linkLabelquenmatkhau.TabIndex = 10;
             this.linkLabelquenmatkhau.TabStop = true;
             this.linkLabelquenmatkhau.Text = "Quên mật khẩu?";
+            this.linkLabelquenmatkhau.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelquenmatkhau_LinkClicked);
+            // 
+            // labelthongbao
+            // 
+            this.labelthongbao.AutoSize = true;
+            this.labelthongbao.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelthongbao.ForeColor = System.Drawing.Color.Red;
+            this.labelthongbao.Location = new System.Drawing.Point(285, 204);
+            this.labelthongbao.Name = "labelthongbao";
+            this.labelthongbao.Size = new System.Drawing.Size(343, 19);
+            this.labelthongbao.TabIndex = 11;
+            this.labelthongbao.Text = "Tài khoản hoặc Mật khẩu chưa đúng. Vui lòng nhập lại!";
+            // 
+            // labelthongbaotaikhoan
+            // 
+            this.labelthongbaotaikhoan.AutoSize = true;
+            this.labelthongbaotaikhoan.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelthongbaotaikhoan.ForeColor = System.Drawing.Color.Red;
+            this.labelthongbaotaikhoan.Location = new System.Drawing.Point(526, 240);
+            this.labelthongbaotaikhoan.Name = "labelthongbaotaikhoan";
+            this.labelthongbaotaikhoan.Size = new System.Drawing.Size(106, 15);
+            this.labelthongbaotaikhoan.TabIndex = 12;
+            this.labelthongbaotaikhoan.Text = "Hãy nhập Tài khoản";
+            // 
+            // labelthongbaomatkhau
+            // 
+            this.labelthongbaomatkhau.AutoSize = true;
+            this.labelthongbaomatkhau.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelthongbaomatkhau.ForeColor = System.Drawing.Color.Red;
+            this.labelthongbaomatkhau.Location = new System.Drawing.Point(529, 288);
+            this.labelthongbaomatkhau.Name = "labelthongbaomatkhau";
+            this.labelthongbaomatkhau.Size = new System.Drawing.Size(105, 15);
+            this.labelthongbaomatkhau.TabIndex = 13;
+            this.labelthongbaomatkhau.Text = "Hãy nhập Mật khẩu";
             // 
             // Formquanlydangvien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(877, 422);
+            this.Controls.Add(this.labelthongbaomatkhau);
+            this.Controls.Add(this.labelthongbaotaikhoan);
+            this.Controls.Add(this.labelthongbao);
             this.Controls.Add(this.linkLabelquenmatkhau);
             this.Controls.Add(this.buttondangnhap);
             this.Controls.Add(this.textBoxmatkhau);
@@ -174,6 +215,9 @@
         private System.Windows.Forms.TextBox textBoxmatkhau;
         private System.Windows.Forms.Button buttondangnhap;
         private System.Windows.Forms.LinkLabel linkLabelquenmatkhau;
+        private System.Windows.Forms.Label labelthongbao;
+        private System.Windows.Forms.Label labelthongbaotaikhoan;
+        private System.Windows.Forms.Label labelthongbaomatkhau;
     }
 }
 

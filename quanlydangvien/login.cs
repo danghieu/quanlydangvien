@@ -16,6 +16,9 @@ namespace quanlydangvien
         public Formquanlydangvien()
         {
             InitializeComponent();
+            labelthongbao.Visible = false;
+            labelthongbaotaikhoan.Visible = false;
+            labelthongbaomatkhau.Visible = false;
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -25,14 +28,26 @@ namespace quanlydangvien
 
         private void button1_Click(object sender, EventArgs e)
         {
-            bool ok= db.checklogin(textBoxtaikhoan.Text,textBoxmatkhau.Text);
-            if(ok){
+            if (textBoxtaikhoan.Text == "") { 
+                labelthongbaotaikhoan.Visible=true;
+            }
+            else if (textBoxmatkhau.Text == "")
+            {
+                labelthongbaomatkhau.Visible = true;
+            }else if (db.checklogin(textBoxtaikhoan.Text,textBoxmatkhau.Text))
+            {
                 this.Hide();
                 formhethongquanly htql = new formhethongquanly();
                 htql.Show();
             }
+            else labelthongbao.Visible = true;
 
             
+        }
+
+        private void linkLabelquenmatkhau_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            MessageBox.Show("Vui lòng liên hệ văn phòng Đảng ủy để lấy lại tài khoản!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
     }
 }
