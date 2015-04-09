@@ -8,3 +8,4 @@ F:\quanlydangvien\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.Propert
 F:\quanlydangvien\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.csproj.GenerateResource.Cache
 F:\quanlydangvien\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.exe
 F:\quanlydangvien\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.pdb
+F:\quanlydangvien\quanlydangvien\quanlydangvien\bin\Debug\mysql.data.dll

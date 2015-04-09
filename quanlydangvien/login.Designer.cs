@@ -37,7 +37,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.textBoxtaikhoan = new System.Windows.Forms.TextBox();
             this.textBoxmatkhau = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttondangnhap = new System.Windows.Forms.Button();
             this.linkLabelquenmatkhau = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -117,16 +117,17 @@
             this.textBoxmatkhau.Size = new System.Drawing.Size(141, 20);
             this.textBoxmatkhau.TabIndex = 8;
             // 
-            // button1
+            // buttondangnhap
             // 
-            this.button1.BackColor = System.Drawing.Color.Green;
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(416, 317);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(83, 32);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Đăng Nhập";
-            this.button1.UseVisualStyleBackColor = false;
+            this.buttondangnhap.BackColor = System.Drawing.Color.Green;
+            this.buttondangnhap.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.buttondangnhap.Location = new System.Drawing.Point(416, 317);
+            this.buttondangnhap.Name = "buttondangnhap";
+            this.buttondangnhap.Size = new System.Drawing.Size(83, 32);
+            this.buttondangnhap.TabIndex = 9;
+            this.buttondangnhap.Text = "Đăng Nhập";
+            this.buttondangnhap.UseVisualStyleBackColor = false;
+            this.buttondangnhap.Click += new System.EventHandler(this.button1_Click);
             // 
             // linkLabelquenmatkhau
             // 
@@ -144,7 +145,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(877, 422);
             this.Controls.Add(this.linkLabelquenmatkhau);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttondangnhap);
             this.Controls.Add(this.textBoxmatkhau);
             this.Controls.Add(this.textBoxtaikhoan);
             this.Controls.Add(this.label6);
@@ -171,7 +172,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBoxtaikhoan;
         private System.Windows.Forms.TextBox textBoxmatkhau;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttondangnhap;
         private System.Windows.Forms.LinkLabel linkLabelquenmatkhau;
     }
 }

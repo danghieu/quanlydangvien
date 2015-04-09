@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="mysql.data">
+      <HintPath>C:\Users\hieu\Downloads\Compressed\mysql-connector-net-6.8.3-noinstall\v2.0\mysql.data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -44,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="database.cs" />
     <Compile Include="hethongquanly.cs">
       <SubType>Form</SubType>
     </Compile>
