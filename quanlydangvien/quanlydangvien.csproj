@@ -48,6 +48,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="database.cs" />
+    <Compile Include="Formcapnhatdiadanh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formcapnhatdiadanh.Designer.cs">
+      <DependentUpon>Formcapnhatdiadanh.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formdoimatkhau.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     <Compile Include="themdangvien.Designer.cs">
       <DependentUpon>themdangvien.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Formcapnhatdiadanh.resx">
+      <DependentUpon>Formcapnhatdiadanh.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formdoimatkhau.resx">
       <DependentUpon>Formdoimatkhau.cs</DependentUpon>
     </EmbeddedResource>
