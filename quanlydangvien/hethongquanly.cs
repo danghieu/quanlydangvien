@@ -26,5 +26,15 @@ namespace quanlydangvien
         {
 
         }
+
+        private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void thayĐổiMậtKhẩuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
