@@ -9,3 +9,4 @@ F:\quanlydangvien\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.csproj.
 F:\quanlydangvien\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.exe
 F:\quanlydangvien\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.pdb
 F:\quanlydangvien\quanlydangvien\quanlydangvien\bin\Debug\mysql.data.dll
+C:\Users\Khai\Documents\quanlydangvien\quanlydangvien\bin\Debug\quanlydangvien.exe.config
