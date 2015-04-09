@@ -16,5 +16,10 @@ namespace quanlydangvien
         {
             InitializeComponent();
         }
+
+        private void labelngoaingu_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

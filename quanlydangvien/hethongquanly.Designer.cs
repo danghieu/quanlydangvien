@@ -51,6 +51,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.sToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -125,7 +126,8 @@
             // 
             this.quảnLýHồSơToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.thêmĐảngViênToolStripMenuItem,
-            this.danhSáchĐảngViênToolStripMenuItem});
+            this.danhSáchĐảngViênToolStripMenuItem,
+            this.sToolStripMenuItem});
             this.quảnLýHồSơToolStripMenuItem.Name = "quảnLýHồSơToolStripMenuItem";
             this.quảnLýHồSơToolStripMenuItem.Size = new System.Drawing.Size(98, 20);
             this.quảnLýHồSơToolStripMenuItem.Text = "Quản Lý Hồ Sơ";
@@ -231,6 +233,12 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "HỆ THỐNG QUẢN LÝ HỒ SƠ ĐẢNG VIÊN";
             // 
+            // sToolStripMenuItem
+            // 
+            this.sToolStripMenuItem.Name = "sToolStripMenuItem";
+            this.sToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.sToolStripMenuItem.Text = "s";
+            // 
             // formhethongquanly
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -276,5 +284,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ToolStripMenuItem sToolStripMenuItem;
     }
 }
