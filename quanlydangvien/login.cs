@@ -28,14 +28,16 @@ namespace quanlydangvien
 
         private void button1_Click(object sender, EventArgs e)
         {
+            user curuser = db.checklogin(textBoxtaikhoan.Text, textBoxmatkhau.Text);
             if (textBoxtaikhoan.Text == "") { 
                 labelthongbaotaikhoan.Visible=true;
             }
             else if (textBoxmatkhau.Text == "")
             {
                 labelthongbaomatkhau.Visible = true;
-            }else if (db.checklogin(textBoxtaikhoan.Text,textBoxmatkhau.Text))
+            }else if (curuser!=null)
             {
+                
                 this.Hide();
                 formhethongquanly htql = new formhethongquanly();
                 htql.Show();

@@ -12,8 +12,6 @@ namespace quanlydangvien
         private string conn;
         private MySqlConnection connect;
         MySqlCommand cmd;
-        MySqlDataAdapter sda;
-        MySqlDataReader dr;
 
         void db_connection(){
             try
@@ -27,25 +25,29 @@ namespace quanlydangvien
                 throw;
             }
         }
-        public bool checklogin(string taikhoan, string matkhau)
+        public user checklogin(string taikhoan, string matkhau)
         {
+            user curuser = null;
             db_connection();
             cmd = new MySqlCommand();
-            cmd.CommandText = "Select * from users where taikhoan=@taikhoan and matkhau=@matkhau";
+            cmd.CommandText = "Select taikhoan,matkhau,hoten,capdo from users where taikhoan=@taikhoan and matkhau=@matkhau";
             cmd.Parameters.AddWithValue("@taikhoan", taikhoan);
             cmd.Parameters.AddWithValue("@matkhau", matkhau);
             cmd.Connection = connect;
             MySqlDataReader login = cmd.ExecuteReader();
             if (login.Read())
             {
-                connect.Close();
-                return true;
+                
+                
+                string tk = login.GetString("taikhoan");
+                string mk = login.GetString("matkhau");
+                string ht = login.GetString("hoten");
+                int cd = login.GetInt32("capdo");
+                 curuser = new user(tk,mk,ht,cd);
+                 connect.Close();
             }
-            else
-            {
-                connect.Close();
-                return false;
-            }
+            return curuser;
+                 
         }
     }
 
