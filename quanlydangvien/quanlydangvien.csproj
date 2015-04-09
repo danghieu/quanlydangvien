@@ -54,6 +54,12 @@
     <Compile Include="Formdoimatkhau.Designer.cs">
       <DependentUpon>Formdoimatkhau.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formtimkiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formtimkiem.Designer.cs">
+      <DependentUpon>Formtimkiem.cs</DependentUpon>
+    </Compile>
     <Compile Include="hethongquanly.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +82,9 @@
     </Compile>
     <EmbeddedResource Include="Formdoimatkhau.resx">
       <DependentUpon>Formdoimatkhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formtimkiem.resx">
+      <DependentUpon>Formtimkiem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="hethongquanly.resx">
       <DependentUpon>hethongquanly.cs</DependentUpon>
