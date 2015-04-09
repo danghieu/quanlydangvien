@@ -10,3 +10,13 @@ F:\quanlydangvien\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.exe
 F:\quanlydangvien\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.pdb
 F:\quanlydangvien\quanlydangvien\quanlydangvien\bin\Debug\mysql.data.dll
 C:\Users\Khai\Documents\quanlydangvien\quanlydangvien\bin\Debug\quanlydangvien.exe.config
+C:\Users\Khai\Documents\quanlydangvien\quanlydangvien\bin\Debug\quanlydangvien.exe
+C:\Users\Khai\Documents\quanlydangvien\quanlydangvien\bin\Debug\quanlydangvien.pdb
+C:\Users\Khai\Documents\quanlydangvien\quanlydangvien\bin\Debug\mysql.data.dll
+C:\Users\Khai\Documents\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.csprojResolveAssemblyReference.cache
+C:\Users\Khai\Documents\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.formhethongquanly.resources
+C:\Users\Khai\Documents\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.Formquanlydangvien.resources
+C:\Users\Khai\Documents\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.Properties.Resources.resources
+C:\Users\Khai\Documents\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.csproj.GenerateResource.Cache
+C:\Users\Khai\Documents\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.exe
+C:\Users\Khai\Documents\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.pdb
