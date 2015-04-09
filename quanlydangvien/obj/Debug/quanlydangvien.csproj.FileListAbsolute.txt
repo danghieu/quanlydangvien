@@ -11,7 +11,6 @@ F:\quanlydangvien\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.pdb
 C:\Users\Khai\Documents\quanlydangvien\quanlydangvien\bin\Debug\quanlydangvien.exe.config
 C:\Users\Khai\Documents\quanlydangvien\quanlydangvien\bin\Debug\quanlydangvien.exe
 C:\Users\Khai\Documents\quanlydangvien\quanlydangvien\bin\Debug\quanlydangvien.pdb
-C:\Users\Khai\Documents\quanlydangvien\quanlydangvien\bin\Debug\mysql.data.dll
 C:\Users\Khai\Documents\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.csprojResolveAssemblyReference.cache
 C:\Users\Khai\Documents\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.formhethongquanly.resources
 C:\Users\Khai\Documents\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.Formquanlydangvien.resources
@@ -19,5 +18,10 @@ C:\Users\Khai\Documents\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.P
 C:\Users\Khai\Documents\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.csproj.GenerateResource.Cache
 C:\Users\Khai\Documents\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.exe
 C:\Users\Khai\Documents\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.pdb
+<<<<<<< HEAD
 F:\quanlydangvien\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.Formdoimatkhau.resources
 F:\quanlydangvien\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.themdangvien.resources
+=======
+C:\Users\Khai\Documents\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.Formdoimatkhau.resources
+C:\Users\Khai\Documents\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.themdangvien.resources
+>>>>>>> 99c12ccb6695d583e4144a22bac1e3d9c10294f7
