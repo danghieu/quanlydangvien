@@ -77,6 +77,7 @@
             this.buttontrove = new System.Windows.Forms.Button();
             this.buttontieptheo = new System.Windows.Forms.Button();
             this.buttonluu = new System.Windows.Forms.Button();
+            this.folderBrowserDialoguploadanh = new System.Windows.Forms.FolderBrowserDialog();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -141,6 +142,7 @@
             this.buttonbrowser.TabIndex = 5;
             this.buttonbrowser.Text = "Browser";
             this.buttonbrowser.UseVisualStyleBackColor = true;
+            this.buttonbrowser.Click += new System.EventHandler(this.buttonbrowser_Click);
             // 
             // buttonxoa
             // 
@@ -605,7 +607,7 @@
             this.Controls.Add(this.buttontrove);
             this.Controls.Add(this.panel1);
             this.Name = "themdangvien";
-            this.Text = "themdangvien";
+            this.Text = "THÊM ĐẢNG VIÊN";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -663,6 +665,7 @@
         private System.Windows.Forms.Button buttontrove;
         private System.Windows.Forms.Button buttonluu;
         private System.Windows.Forms.Button buttontieptheo;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialoguploadanh;
 
     }
 }

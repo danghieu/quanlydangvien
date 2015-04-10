@@ -15,11 +15,23 @@ namespace quanlydangvien
         public themdangvien()
         {
             InitializeComponent();
+            database db = new database();
         }
 
         private void labelngoaingu_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonbrowser_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog open = new OpenFileDialog();
+            open.InitialDirectory = "E:";
+            DialogResult result = open.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                pictureBox1.Image = Image.FromStream(open.OpenFile());
+            }
         }
     }
 }

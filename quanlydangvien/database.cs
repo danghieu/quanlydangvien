@@ -3,50 +3,50 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MySql.Data.MySqlClient;
 
+using System.Data.SqlClient;
 namespace quanlydangvien
 {
     class database
     {
         private string conn;
-        private MySqlConnection connect;
-        MySqlCommand cmd;
-        MySqlDataAdapter sda;
-        MySqlDataReader dr;
+        private SqlConnection connect;
+        SqlCommand cmd;
+        SqlDataAdapter sda;
+        SqlDataReader dr;
 
         void db_connection(){
             try
             {
-                conn = "Server=localhost;Database=quanlydangvien;Uid=root;Pwd=;";
-                connect = new MySqlConnection(conn);
+                conn = "Data Source=DANGHIEU-PC;Initial Catalog=quanlydangvien;Integrated Security=True";
+                connect = new SqlConnection(conn);
                 connect.Open();
             }
-            catch (MySqlException )
+            catch (SqlException e)
             {
-                throw;
+                throw e;
             }
         }
         public user checklogin(string taikhoan, string matkhau)
         {
             user curuser = null;
             db_connection();
-            cmd = new MySqlCommand();
+            cmd = new SqlCommand();
             cmd.CommandText = "Select taikhoan,matkhau,hoten,capdo from users where taikhoan=@taikhoan and matkhau=@matkhau";
             cmd.Parameters.AddWithValue("@taikhoan", taikhoan);
             cmd.Parameters.AddWithValue("@matkhau", matkhau);
             cmd.Connection = connect;
-            MySqlDataReader login = cmd.ExecuteReader();
+            SqlDataReader login = cmd.ExecuteReader();
             if (login.Read())
             {
 
 
-                string tk = login.GetString("taikhoan");
-                string mk = login.GetString("matkhau");
-                string ht = login.GetString("hoten");
-                int cd = login.GetInt32("capdo");
+                string tk = login.GetString(0);
+                string mk = login.GetString(1);
+                string ht = login.GetString(2);
+                int cd = login.GetInt32(3);
                 curuser = new user(tk, mk, ht, cd);
-                connect.Close();
+               // connect.Close();
             }
             return curuser;
         }
