@@ -12,6 +12,8 @@ namespace quanlydangvien
         private string conn;
         private MySqlConnection connect;
         MySqlCommand cmd;
+        MySqlDataAdapter sda;
+        MySqlDataReader dr;
 
         void db_connection(){
             try
@@ -37,17 +39,16 @@ namespace quanlydangvien
             MySqlDataReader login = cmd.ExecuteReader();
             if (login.Read())
             {
-                
-                
+
+
                 string tk = login.GetString("taikhoan");
                 string mk = login.GetString("matkhau");
                 string ht = login.GetString("hoten");
                 int cd = login.GetInt32("capdo");
-                 curuser = new user(tk,mk,ht,cd);
-                 connect.Close();
+                curuser = new user(tk, mk, ht, cd);
+                connect.Close();
             }
             return curuser;
-                 
         }
     }
 

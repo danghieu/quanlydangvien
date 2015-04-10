@@ -18,10 +18,10 @@ C:\Users\Khai\Documents\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.P
 C:\Users\Khai\Documents\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.csproj.GenerateResource.Cache
 C:\Users\Khai\Documents\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.exe
 C:\Users\Khai\Documents\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.pdb
-<<<<<<< HEAD
-F:\quanlydangvien\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.Formdoimatkhau.resources
-F:\quanlydangvien\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.themdangvien.resources
-=======
 C:\Users\Khai\Documents\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.Formdoimatkhau.resources
 C:\Users\Khai\Documents\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.themdangvien.resources
->>>>>>> 99c12ccb6695d583e4144a22bac1e3d9c10294f7
+F:\quanlydangvien\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.Formcapnhatdiadanh.resources
+F:\quanlydangvien\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.Formdoimatkhau.resources
+F:\quanlydangvien\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.Formthemchibo.resources
+F:\quanlydangvien\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.Formtimkiem.resources
+F:\quanlydangvien\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.themdangvien.resources
