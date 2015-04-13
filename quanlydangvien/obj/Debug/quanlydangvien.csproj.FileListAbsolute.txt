@@ -8,7 +8,6 @@ F:\quanlydangvien\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.Propert
 F:\quanlydangvien\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.csproj.GenerateResource.Cache
 F:\quanlydangvien\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.exe
 F:\quanlydangvien\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.pdb
-F:\quanlydangvien\quanlydangvien\quanlydangvien\bin\Debug\mysql.data.dll
 C:\Users\Khai\Documents\quanlydangvien\quanlydangvien\bin\Debug\quanlydangvien.exe.config
 C:\Users\Khai\Documents\quanlydangvien\quanlydangvien\bin\Debug\quanlydangvien.exe
 C:\Users\Khai\Documents\quanlydangvien\quanlydangvien\bin\Debug\quanlydangvien.pdb
@@ -21,3 +20,8 @@ C:\Users\Khai\Documents\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.e
 C:\Users\Khai\Documents\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.pdb
 C:\Users\Khai\Documents\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.Formdoimatkhau.resources
 C:\Users\Khai\Documents\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.themdangvien.resources
+F:\quanlydangvien\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.Formcapnhatdiadanh.resources
+F:\quanlydangvien\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.Formdoimatkhau.resources
+F:\quanlydangvien\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.Formthemchibo.resources
+F:\quanlydangvien\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.Formtimkiem.resources
+F:\quanlydangvien\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.themdangvien.resources
