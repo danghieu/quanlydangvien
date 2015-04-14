@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dangvien.cs" />
     <Compile Include="database.cs" />
     <Compile Include="Formcapnhatdiadanh.cs">
       <SubType>Form</SubType>

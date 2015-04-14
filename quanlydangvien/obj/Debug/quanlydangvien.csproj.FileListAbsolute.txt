@@ -25,3 +25,9 @@ F:\quanlydangvien\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.Formdoi
 F:\quanlydangvien\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.Formthemchibo.resources
 F:\quanlydangvien\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.Formtimkiem.resources
 F:\quanlydangvien\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.themdangvien.resources
+F:\tam\New folder\quanlydangvien\quanlydangvien\bin\Debug\quanlydangvien.exe.config
+F:\tam\New folder\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.exe
+F:\tam\New folder\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.pdb
+F:\DA\quanlydangvien\quanlydangvien\bin\Debug\quanlydangvien.exe.config
+F:\DA\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.exe
+F:\DA\quanlydangvien\quanlydangvien\obj\Debug\quanlydangvien.pdb
