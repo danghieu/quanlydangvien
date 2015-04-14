@@ -36,5 +36,11 @@ namespace quanlydangvien
         {
 
         }
+
+        private void thêmĐảngViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            themdangvien formthemdangvien = new themdangvien();
+            formthemdangvien.ShowDialog();
+        }
     }
 }

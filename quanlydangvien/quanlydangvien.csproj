@@ -47,12 +47,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dangvien.cs" />
     <Compile Include="database.cs" />
+    <Compile Include="Formcapnhatdiadanh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formcapnhatdiadanh.Designer.cs">
+      <DependentUpon>Formcapnhatdiadanh.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formdoimatkhau.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formdoimatkhau.Designer.cs">
       <DependentUpon>Formdoimatkhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formthemchibo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formthemchibo.Designer.cs">
+      <DependentUpon>Formthemchibo.cs</DependentUpon>
     </Compile>
     <Compile Include="Formtimkiem.cs">
       <SubType>Form</SubType>
@@ -80,8 +93,15 @@
     <Compile Include="themdangvien.Designer.cs">
       <DependentUpon>themdangvien.cs</DependentUpon>
     </Compile>
+    <Compile Include="user.cs" />
+    <EmbeddedResource Include="Formcapnhatdiadanh.resx">
+      <DependentUpon>Formcapnhatdiadanh.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formdoimatkhau.resx">
       <DependentUpon>Formdoimatkhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formthemchibo.resx">
+      <DependentUpon>Formthemchibo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formtimkiem.resx">
       <DependentUpon>Formtimkiem.cs</DependentUpon>
