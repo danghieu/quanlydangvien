@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace quanlydangvien
 {
-    class user
+    class vanphongchibo
     {
         private string taikhoan;
         private string matkhau;
         private string hoten;
         private int capdo;
 
-        
+
         public string Taikhoan
         {
             get
@@ -58,13 +58,40 @@ namespace quanlydangvien
                 capdo = value;
             }
         }
-        public user(string tk, string mk, string ht, int cd)
+        public vanphongchibo(string tk, string mk, string ht, int cd)
         {
             taikhoan = tk;
             matkhau = mk;
             hoten = ht;
             capdo = cd;
         }
+        public void DoiMatKhau()
+        {
+
+        }
+        public void Thoat()
+        {
+
+        }
+    }
+
+     class vanphongdanguy : vanphongchibo
+    {
+        public vanphongdanguy(string taikhoan,string matkhau,string hoten,int capdo) :base(taikhoan,matkhau,hoten,capdo) { 
+        
+        }
+        public void QuanLyCB() { 
+        
+        }
+        public void SaoLuuDL()
+        {
+
+        }
+        public void KhoiPhucDL()
+        {
+
+        }
+
     }
 
 }

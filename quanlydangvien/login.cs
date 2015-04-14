@@ -28,7 +28,7 @@ namespace quanlydangvien
 
         private void button1_Click(object sender, EventArgs e)
         {
-            user curuser = db.checklogin(textBoxtaikhoan.Text, textBoxmatkhau.Text);
+            vanphongchibo curuser = db.checklogin(textBoxtaikhoan.Text, textBoxmatkhau.Text);
             if (textBoxtaikhoan.Text == "")
             {
                 labelthongbaotaikhoan.Visible = true;

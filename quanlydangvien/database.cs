@@ -28,9 +28,9 @@ namespace quanlydangvien
                 throw e;
             }
         }
-        public user checklogin(string taikhoan, string matkhau)
+        public vanphongchibo checklogin(string taikhoan, string matkhau)
         {
-            user curuser = null;
+            vanphongchibo curuser = null;
             db_connection();
             cmd = new SqlCommand();
             cmd.CommandText = "Select taikhoan,matkhau,hoten,capdo from users where taikhoan=@taikhoan and matkhau=@matkhau";
@@ -46,7 +46,14 @@ namespace quanlydangvien
                 string mk = login.GetString(1);
                 string ht = login.GetString(2);
                 int cd = login.GetInt32(3);
-                curuser = new user(tk, mk, ht, cd);
+                if (cd == 1)
+                {
+                    curuser = new vanphongchibo(tk, mk, ht, cd);
+
+                }
+                else {
+                    curuser = new vanphongdanguy(tk, mk, ht, cd);
+                }
                // connect.Close();
             }
             return curuser;
