@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(themdangvien));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.textBoxnghenghiep = new System.Windows.Forms.TextBox();
             this.textBoxcmnd = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonbrowser = new System.Windows.Forms.Button();
@@ -95,7 +96,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBoxnghenghiep = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -157,12 +157,22 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // textBoxnghenghiep
+            // 
+            this.textBoxnghenghiep.Location = new System.Drawing.Point(473, 121);
+            this.textBoxnghenghiep.Name = "textBoxnghenghiep";
+            this.textBoxnghenghiep.Size = new System.Drawing.Size(186, 20);
+            this.textBoxnghenghiep.TabIndex = 8;
+            this.textBoxnghenghiep.Text = "  ";
+            // 
             // textBoxcmnd
             // 
             this.textBoxcmnd.Location = new System.Drawing.Point(121, 84);
             this.textBoxcmnd.Name = "textBoxcmnd";
             this.textBoxcmnd.Size = new System.Drawing.Size(186, 20);
             this.textBoxcmnd.TabIndex = 7;
+            this.textBoxcmnd.Text = "    ";
+            this.textBoxcmnd.TextChanged += new System.EventHandler(this.textBoxcmnd_TextChanged);
             // 
             // label1
             // 
@@ -595,6 +605,7 @@
             this.buttontrove.TabIndex = 1;
             this.buttontrove.Text = "Trở Về";
             this.buttontrove.UseVisualStyleBackColor = false;
+            this.buttontrove.Click += new System.EventHandler(this.buttontrove_Click);
             // 
             // buttontieptheo
             // 
@@ -605,6 +616,7 @@
             this.buttontieptheo.TabIndex = 1;
             this.buttontieptheo.Text = "Tiếp Theo";
             this.buttontieptheo.UseVisualStyleBackColor = false;
+            this.buttontieptheo.Click += new System.EventHandler(this.buttontieptheo_Click);
             // 
             // buttonluu
             // 
@@ -670,6 +682,7 @@
             this.textBoxbidanh.Name = "textBoxbidanh";
             this.textBoxbidanh.Size = new System.Drawing.Size(149, 20);
             this.textBoxbidanh.TabIndex = 24;
+            this.textBoxbidanh.Text = "  ";
             // 
             // comboBoxchibo
             // 
@@ -678,6 +691,7 @@
             this.comboBoxchibo.Name = "comboBoxchibo";
             this.comboBoxchibo.Size = new System.Drawing.Size(157, 21);
             this.comboBoxchibo.TabIndex = 23;
+            this.comboBoxchibo.Text = "  ";
             // 
             // dateTimePickerngayvaodubi
             // 
@@ -708,7 +722,7 @@
             this.richTextBoxthongtinthem.Name = "richTextBoxthongtinthem";
             this.richTextBoxthongtinthem.Size = new System.Drawing.Size(431, 127);
             this.richTextBoxthongtinthem.TabIndex = 18;
-            this.richTextBoxthongtinthem.Text = "";
+            this.richTextBoxthongtinthem.Text = "  ";
             // 
             // textBoxnoivaodubi
             // 
@@ -716,6 +730,7 @@
             this.textBoxnoivaodubi.Name = "textBoxnoivaodubi";
             this.textBoxnoivaodubi.Size = new System.Drawing.Size(149, 20);
             this.textBoxnoivaodubi.TabIndex = 17;
+            this.textBoxnoivaodubi.Text = "   ";
             // 
             // textBoxnoivaochinhthuc
             // 
@@ -723,6 +738,7 @@
             this.textBoxnoivaochinhthuc.Name = "textBoxnoivaochinhthuc";
             this.textBoxnoivaochinhthuc.Size = new System.Drawing.Size(150, 20);
             this.textBoxnoivaochinhthuc.TabIndex = 16;
+            this.textBoxnoivaochinhthuc.Text = "  ";
             // 
             // label10
             // 
@@ -778,13 +794,6 @@
             this.label4.TabIndex = 2;
             this.label4.Text = "Chi bộ";
             // 
-            // textBoxnghenghiep
-            // 
-            this.textBoxnghenghiep.Location = new System.Drawing.Point(473, 121);
-            this.textBoxnghenghiep.Name = "textBoxnghenghiep";
-            this.textBoxnghenghiep.Size = new System.Drawing.Size(186, 20);
-            this.textBoxnghenghiep.TabIndex = 8;
-            // 
             // themdangvien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -796,6 +805,7 @@
             this.Controls.Add(this.buttontrove);
             this.Name = "themdangvien";
             this.Text = "THÊM ĐẢNG VIÊN";
+            this.Load += new System.EventHandler(this.themdangvien_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

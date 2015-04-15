@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using System.Data.SqlClient;
 using System.IO;
+using System.Data;
+using System.Windows.Forms;
 namespace quanlydangvien
 {
     class database
@@ -13,8 +14,6 @@ namespace quanlydangvien
         private string conn;
         private SqlConnection connect;
         SqlCommand cmd;
-        SqlDataAdapter sda;
-        SqlDataReader dr;
 
         public void db_connection(){
             try
@@ -28,6 +27,7 @@ namespace quanlydangvien
                 throw e;
             }
         }
+
         public vanphongchibo checklogin(string taikhoan, string matkhau)
         {
             vanphongchibo curuser = null;
@@ -62,12 +62,13 @@ namespace quanlydangvien
         public void themdangvien(string image,string sothe, string hoten, DateTime ngaysinh, string gioitinh, int cmnd, 
             DateTime ngayvaochinhthuc, string noivaochinhthuc, DateTime ngayvaodubi, string noivaodubi, string quequan, 
             string noisinh, string MaTG, string MaDT, string maTDVH, string solylich,string bidanh, string nghenghiep,
-            string MaCB, string chucdanh, string lyluanct, string choohiennay, string thongtinthem, string tinhtrangDV)
+            string MaCB, string chucdanh, string choohiennay, string thongtinthem, string tinhtrangDV)
         {
+            
             db_connection();
             cmd = new SqlCommand();
-            cmd.CommandText = "INSERT INTO dangvien(anhdaidien,MaDV,hoten,ngaysinh,gioitinh,CMND,ngayvaochinhthuc,noivaochinhthuc,ngayvaodubi,noivaodubi,quequan,noisinh,MaTG,MaDT,maTDVH,tinhtrangDV,solylich,bidanh,nghenghiep,,MaCB,chucdanh,choohiennay,thongtinthem)" +
-            "VALUES(@image,@sothe,@hoten,@ngaysinh,@gioitinh,@ngayvaochinhthuc,@noivaochinhthuc,@ngayvaodubi,@noivaodubi,@quequan,@noisinh,@MaTG,@MaDT,@maTDVH,@tinhtrangDV,@bidanh,@nghenghiep,@MaCB,@chucdanh,@choohiennay,@thongtinthem) ";
+            cmd.CommandText = "INSERT INTO dangvien(anhdaidien,MaDV,hoten,ngaysinh,gioitinh,CMND,ngayvaochinhthuc,noivaochinhthuc,ngayvaodubi,noivaodubi,quequan,noisinh,MaTG,MaDT,maTDVH,tinhtrangDV,bidanh,nghenghiep,MaCB,chucdanh,choohiennay,thongtinthem)" +
+                                            "VALUES(@image,@sothe,@hoten,@ngaysinh,@gioitinh,@cmnd,@ngayvaochinhthuc,@noivaochinhthuc,@ngayvaodubi,@noivaodubi,@quequan,@noisinh,@MaTG,@MaDT,@maTDVH,@tinhtrangDV,@bidanh,@nghenghiep,@MaCB,@chucdanh,@choohiennay,@thongtinthem) ";
             cmd.Parameters.AddWithValue("@image", convertImageToByte(image));
             cmd.Parameters.AddWithValue("@sothe", sothe );
             cmd.Parameters.AddWithValue("@hoten", hoten);
@@ -88,11 +89,11 @@ namespace quanlydangvien
             cmd.Parameters.AddWithValue("@nghenghiep",nghenghiep );
             cmd.Parameters.AddWithValue("@MaCB",MaCB );
             cmd.Parameters.AddWithValue("@chucdanh",chucdanh );
-            cmd.Parameters.AddWithValue("@lyluanct",choohiennay );
             cmd.Parameters.AddWithValue("@thongtinthem",thongtinthem );
+            cmd.Parameters.AddWithValue("@choohiennay", choohiennay);
             cmd.Parameters.AddWithValue("@tinhtrangDV", tinhtrangDV);
             cmd.Connection = connect;
-            SqlDataReader login = cmd.ExecuteReader();
+            cmd.ExecuteReader();
         }
         private byte[] convertImageToByte(string image){
             FileStream fs;
@@ -102,6 +103,25 @@ namespace quanlydangvien
             fs.Close();
             return picbyte;
 
+        }
+        public DataSet laydanhsachdangvien() { 
+            db_connection();
+            cmd = new SqlCommand();
+            cmd.CommandText = "SELECT * FROM dangvien";
+            cmd.Connection = connect;
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            DataSet ds = new DataSet();
+            sda.Fill(ds);
+            return ds;
+        }
+        public void xoadangvien(DataGridViewRow dvr) {
+            db_connection();
+            cmd = new SqlCommand();
+            string MaDV = dvr.Cells["MaDV"].Value.ToString();
+            cmd.CommandText = "DELETE FROM dangvien WHERE MADV=@MADV";
+            cmd.Parameters.AddWithValue("@MaDV", MaDV);
+            cmd.Connection = connect;
+            cmd.ExecuteNonQuery();
         }
     }
 

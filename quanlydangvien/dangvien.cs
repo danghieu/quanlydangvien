@@ -8,11 +8,12 @@ namespace quanlydangvien
 {
     class dangvien
     {
+        private string anhdaidien;
         private string sothe;
         private string hoten;
         private string trangthai;
         private string solylich;
-        private string cmnd;
+        private int cmnd;
         private DateTime ngaysinh;
         private string madt;
         private string matg;
@@ -28,9 +29,8 @@ namespace quanlydangvien
         private DateTime ngayvaodubi;
         private string noivaochinhthuc;
         private DateTime ngaychinhthuc;
-        private string ngoainhu;
+        private string ngoaingu;
         private string macb;
-        private string danguy;
         private string thongtinthem;
 
         public string Thongtinthem
@@ -61,7 +61,7 @@ namespace quanlydangvien
             set { solylich = value; }
         }
 
-        public string Cmnd
+        public int Cmnd
         {
             get { return cmnd; }
             set { cmnd = value; }
@@ -159,8 +159,8 @@ namespace quanlydangvien
 
         public string Ngoainhu
         {
-            get { return ngoainhu; }
-            set { ngoainhu = value; }
+            get { return ngoaingu; }
+            set { ngoaingu = value; }
         }
 
         public string Macb
@@ -169,43 +169,42 @@ namespace quanlydangvien
             set { macb = value; }
         }
 
-        public string Danguy
-        {
-            get { return danguy; }
-            set { danguy = value; }
-        }
+        
 
-        public dangvien(string st, string ht, string tt, string soll, string cm,DateTime ns,string dt, string tg,
+        public dangvien(string add,string st, string ht, string tt, string soll, int cm,DateTime ns,string dt, string tg,
                         string tdhv, string cd,string gt, string bd, string nn, string nois, string qq, string chohn, string noivdb,
-                        DateTime ngayvdb, string noivct, DateTime ngayvct,string ngng,string cb, string du,string ttt) { 
-        sothe=st;
-        hoten=ht;
-        trangthai=tt;
-        solylich=soll;
-        cmnd=cm;
-        ngaysinh=ns;
-        madt=dt;
-        matg=tg;
-        matdhv=tdhv;
-        chucdanh=cd;
-        gioitinh=gt;
-        bidanh=bd;
-        nghenghiep=nn;
-        noisinh=nois;
-        quequan=qq;
-        choohiennay=chohn;
-        noivaodubi=noivdb;
-        ngayvaodubi=ngayvdb;
-        noivaochinhthuc=noivct;
-        ngaychinhthuc=ngayvct;
-        ngoainhu=ngng;
-        macb=cb;
-        danguy=du;
-        thongtinthem=ttt;               
+                        DateTime ngayvdb, string noivct, DateTime ngayvct,string ngng,string cb,string ttt) {
+                anhdaidien = add;
+                sothe=st;
+                hoten=ht;
+                trangthai=tt;
+                solylich=soll;
+                cmnd=cm;
+                ngaysinh=ns;
+                madt=dt;
+                matg=tg;
+                matdhv=tdhv;
+                chucdanh=cd;
+                gioitinh=gt;
+                bidanh=bd;
+                nghenghiep=nn;
+                noisinh=nois;
+                quequan=qq;
+                choohiennay=chohn;
+                noivaodubi=noivdb;
+                ngayvaodubi=ngayvdb;
+                noivaochinhthuc=noivct;
+                ngaychinhthuc=ngayvct;
+                ngoaingu=ngng;
+                macb=cb;
+                thongtinthem=ttt;               
         
         }
-        
 
+        public void themdangvien() {
+            database db = new database();
+            db.themdangvien(anhdaidien, sothe, hoten, ngaysinh, gioitinh, cmnd, ngaychinhthuc, noivaochinhthuc, ngayvaodubi, noivaodubi, quequan, noisinh, matg, madt, matdhv, solylich, bidanh, nghenghiep, Macb, chucdanh,choohiennay, thongtinthem, trangthai);
+        }
 
     }
 }

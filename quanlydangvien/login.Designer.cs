@@ -112,6 +112,7 @@
             this.textBoxtaikhoan.Name = "textBoxtaikhoan";
             this.textBoxtaikhoan.Size = new System.Drawing.Size(141, 20);
             this.textBoxtaikhoan.TabIndex = 7;
+            this.textBoxtaikhoan.Text = "admin";
             // 
             // textBoxmatkhau
             // 
@@ -120,6 +121,7 @@
             this.textBoxmatkhau.PasswordChar = '*';
             this.textBoxmatkhau.Size = new System.Drawing.Size(141, 20);
             this.textBoxmatkhau.TabIndex = 8;
+            this.textBoxmatkhau.Text = "admin";
             // 
             // buttondangnhap
             // 
