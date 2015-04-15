@@ -113,5 +113,10 @@ namespace quanlydangvien
                 }
             }
         }
+
+        private void comboBoxloc_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

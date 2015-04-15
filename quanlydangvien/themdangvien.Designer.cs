@@ -151,7 +151,7 @@
             this.panel1.Controls.Add(this.labelsothedv);
             this.panel1.Controls.Add(this.labelsolylich);
             this.panel1.Controls.Add(this.labeltrangthai);
-            this.panel1.Location = new System.Drawing.Point(16, 17);
+            this.panel1.Location = new System.Drawing.Point(16, 21);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(901, 360);
             this.panel1.TabIndex = 0;

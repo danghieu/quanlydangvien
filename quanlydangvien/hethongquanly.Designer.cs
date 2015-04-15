@@ -363,6 +363,7 @@
             this.comboBoxloc.Name = "comboBoxloc";
             this.comboBoxloc.Size = new System.Drawing.Size(227, 32);
             this.comboBoxloc.TabIndex = 8;
+            this.comboBoxloc.SelectedIndexChanged += new System.EventHandler(this.comboBoxloc_SelectedIndexChanged);
             // 
             // textBoxtimkiem
             // 

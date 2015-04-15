@@ -134,7 +134,14 @@ namespace quanlydangvien
 
         private void buttontrove_Click(object sender, EventArgs e)
         {
-            this.Close();
+            if (tabControl1.SelectedTab == tabPage2)
+            {
+                tabControl1.SelectedTab = tabPage1;
+            }
+            else { this.Close(); }
+
+
+            
         }
 
         private void textBoxcmnd_TextChanged(object sender, EventArgs e)
@@ -149,7 +156,7 @@ namespace quanlydangvien
 
         private void buttontieptheo_Click(object sender, EventArgs e)
         {
-
+            tabControl1.SelectedTab = tabPage2;
         }
     }
 }
